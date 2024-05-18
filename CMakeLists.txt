@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(REACTOR)
+set(CMAKE_CXX_STANDARD 20)
+file(GLOB SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(server ${SRCS})
