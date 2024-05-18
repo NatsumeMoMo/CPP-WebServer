@@ -7,11 +7,13 @@
 本项目是一个基于C++的高性能Web服务器，使用C++11编写，采用了多线程和非阻塞IO处理，以及Reactor事件处理模式，能够处理静态资源的请求，支持HTTP/1.1协议。服务器使用Epoll作为IO多路复用技术的核心，通过有效地管理socket连接和数据传输，提高了服务器的处理能力和响应速度
 
 
+
   
 ## Environment
 
 - OS: Ubuntu 23.10
 - Complier: G++ 13.2
+
 
 
   
@@ -22,6 +24,7 @@
 ```
 
 ( Before starting the server, modify configuration information such as the IP address and port in the "config.ini" file )
+
 
 
   
@@ -37,6 +40,7 @@
   2. 使用智能指针等机制减少内存泄露的可能
   3. 服务器支持优雅关闭
   4. 实现了简单的Logger日志模块
+
 
 
   
@@ -71,6 +75,7 @@
 5. 数据通过Connection发送回客户端，完成一次请求响应周期
 
 
+
   
 ## Stress Test
 
@@ -96,6 +101,7 @@
 
 
 
+  
 ## Thoughts
 
 在人手一个Muduo库的24年，我依旧选择了基于Muduo的WebServer这样一个烂大街的项目来作为自己的第一个实战练手。因为虽然它烂大街了，但不得不承认这样的一个WebServer是综合掌握Linux网络编程、高并发编程、Reactor模型等各方面知识点的一个优秀起步项目，我个人认为也是每个打算走CPP后端开发方向的程序员必做的项目之一。
