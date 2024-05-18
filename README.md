@@ -42,7 +42,7 @@
 
 ## Code Structure Diagram
 
-![](.\pic\Code Structure Diagram.png)
+![]([.\pic\Code Structure Diagram.png](https://github.com/NatsumeMoMo/C-High-Performance-Web-Server-With-Muduo-like-Framewor/blob/main/pic/Code Structure Diagram.png))
 
 (实线和主干代表该类拥有指向的对象，可以掌管其生命周期。虚线代表的是只是为了使用其功能，由外界传入)
 
@@ -78,7 +78,7 @@
 
 - 10线程 1000客户端 60s 短连接测试（QPS=13688.33）
 
-  ![](.\pic\short link.png)
+  ![]([.\pic\short link.png](https://github.com/NatsumeMoMo/C-High-Performance-Web-Server-With-Muduo-like-Framewor/blob/main/pic/short link.png))
 
 
 
@@ -88,7 +88,7 @@
 
 - 10线程 1000客户端 60s 长连接测试（QPS=313253.87）
 
-  ![](.\pic\long link.png)
+  ![]([.\pic\long link.png](https://github.com/NatsumeMoMo/C-High-Performance-Web-Server-With-Muduo-like-Framewor/blob/main/pic/long link.png))
 
 
 
