@@ -7,14 +7,14 @@
 本项目是一个基于C++的高性能Web服务器，使用C++11编写，采用了多线程和非阻塞IO处理，以及Reactor事件处理模式，能够处理静态资源的请求，支持HTTP/1.1协议。服务器使用Epoll作为IO多路复用技术的核心，通过有效地管理socket连接和数据传输，提高了服务器的处理能力和响应速度
 
 
-
+  
 ## Environment
 
 - OS: Ubuntu 23.10
 - Complier: G++ 13.2
 
 
-
+  
 ## Usage
 
 ```
@@ -24,7 +24,7 @@
 ( Before starting the server, modify configuration information such as the IP address and port in the "config.ini" file )
 
 
-
+  
 ## Main Technical points
 
 - **多线程处理**：利用线程池来管理和调度多个线程，充分提高多核CPU资源利用率和服务器响应速度，避免线程频繁创建销毁的开销。Acceptor分配在主线程上，主线程只负责accept请求，将Connection以Round Robin的方式分发给各IO线程（IO线程既负责IO通信也兼顾计算任务）
@@ -39,7 +39,7 @@
   4. 实现了简单的Logger日志模块
 
 
-
+  
 ## Code Structure Diagram
 
 ![](https://github.com/NatsumeMoMo/C-High-Performance-Web-Server-With-Muduo-like-Framewor/blob/main/pic/CodeStructure.png)
@@ -71,7 +71,7 @@
 5. 数据通过Connection发送回客户端，完成一次请求响应周期
 
 
-
+  
 ## Stress Test
 
 ### Short link test
