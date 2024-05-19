@@ -83,7 +83,7 @@
 
 - 10线程 1000客户端 60s 短连接测试（QPS=13688.33）
 
-  ![](https://github.com/NatsumeMoMo/C-High-Performance-Web-Server-With-Muduo-like-Framewor/blob/main/pic/shortlink.png))
+  ![](https://github.com/NatsumeMoMo/C-High-Performance-Web-Server-With-Muduo-like-Framewor/blob/main/pic/shortlink.png)
 
 
 
