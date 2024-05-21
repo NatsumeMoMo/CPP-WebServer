@@ -80,7 +80,6 @@ int main()
     std::string current_directory = get_current_directory();
     std::string target_path = current_directory + "/websrc";
 
-    // chdir("/home/jason/shared/Work_and_learn/Code/CPP/CPPwork/WebServer/MyWebServer/websrc"); // 切换服务器的工作路径 <unistd.h>
     // 切换服务器的工作路径
     if (chdir(target_path.c_str()) != 0) {
         LOG_ERROR("无法切换工作路径到: %s", target_path.c_str());
@@ -89,12 +88,3 @@ int main()
     mServer->Start();
     return 0;
 }
-
-/*
-TODO:
-1. 使用配置文件启动服务器
-
-  cd ../WebServer/WebBench
-
-  ./webbench -c 1000 -t 10 -2 http://localhost:8888/
-*/
